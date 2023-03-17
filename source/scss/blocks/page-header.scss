@@ -1,0 +1,13 @@
+.page-header {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 calc(var(--index) * 2.5);
+  background-color: $color_black;
+  border-bottom: 2px solid $color_white;
+
+  @include widthTablet {
+    min-height: 65px;
+  }
+}

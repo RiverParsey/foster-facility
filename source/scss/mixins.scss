@@ -1,0 +1,67 @@
+// Size setter
+
+@mixin main_size ($width, $height) {
+  min-width: $width;
+  min-height: $height;
+}
+
+// Reset
+
+@mixin reset_indent {   // Reset
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset_list {   // Reset list
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Device sizes
+
+@mixin widthMobileSmall {                // Mobile with extra small display
+  @media (min-width: $mobile_w-s) {
+    @content;
+  }
+}
+
+@mixin widthTablet {               // Tablet
+  @media (min-width: $tablet_w) {
+    @content;
+  }
+}
+
+@mixin widthTablet_only {                                      // Tablet only
+  @media (min-width: $tablet_w) and (max-width: $desktop_w) {
+    @content;
+  }
+}
+
+@mixin widthDesktop {               // Desktop
+  @media (min-width: $desktop_w) {
+    @content;
+  }
+}
+
+@mixin widthDesktop_l {
+  @media (min-width: $desktop_w_l) {
+    @content;
+  }
+}
+
+// Font setter
+
+@mixin set_font ($f-size, $l-height, $f-weight) {   // Set font
+  font-size: $f-size;
+  line-height: $l-height;
+  font-weight: $f-weight;
+}
+
+// Resolution setter
+
+@mixin resolution_2x {              // Resolution
+  @media (min-resolution: 2dppx) {
+    @content;
+  }
+}

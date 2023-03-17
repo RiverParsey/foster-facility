@@ -1,0 +1,21 @@
+@import "global/normalize.scss";  // normalize file
+
+@import "global/fonts.scss";  // fonts
+
+@import "variables.scss"; // variables
+
+@import "mixins.scss";  // mixins
+
+@import "global/global.scss"; // global styles
+
+@import "blocks/page-header.scss"; // header styles
+
+@import "blocks/header-intro.scss"; // header introduction styles
+
+@import "blocks/header-menu.scss";  // header menu styles
+
+@import "blocks/page-main.scss";  // page-main styles
+
+@import "blocks/page-main-gallery.scss"; // page-main gallery styles
+
+@import "blocks/page-footer.scss";  // footer styles

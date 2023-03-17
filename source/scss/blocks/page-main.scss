@@ -1,0 +1,37 @@
+.page-main {
+  flex: 1 1 auto;
+}
+
+.page-main__wrapper {
+  position: relative;
+}
+
+.opening-text {
+  padding: 60px 0 90px 0;
+  color: $color_white;
+
+  @include widthDesktop {
+    position: absolute;
+    top: calc(var(--index) * 30);
+    left: 0;
+  }
+}
+
+.opening-text__field {
+  margin-bottom: 15px;
+}
+
+.opening-text__text {
+  display: inline-block;
+  padding-left: calc(var(--index) * 8);
+  font-size: calc(var(--index) * 3);
+  border-bottom: 1px solid $color_white;
+
+  @include widthTablet {
+    font-size: calc(var(--index) * 5);
+  }
+
+  @include widthDesktop {
+    font-size: calc(var(--index) * 2.5);
+  }
+}

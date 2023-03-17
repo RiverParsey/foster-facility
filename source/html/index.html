@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
 
@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="../js/index.js" defer></script>
 
   <title>Foster Facility Example</title>
 
@@ -26,73 +28,72 @@
 
           <div class="introduction__switches-wrapper">
             <div class="introduction__lang-switcher lang-switcher">
-              <div class="lang-switcher__english">
-
+              <div class="lang-switcher__field lang-switcher__english">
+                <img src="../img/polish-flag.png" alt="" width="21" height="16" class="lang-switcher__image">
               </div>
-              <div class="lang-switcher__ukrainian">
-
+              <div class="lang-switcher__field lang-switcher__ukrainian">
+                <img src="../img/english-flag.png" alt="" width="21" height="16" class="lang-switcher__image">
               </div>
             </div>
             <div class="introduction__contacts contacts">
               <div class="contacts__mobile">
-                <a href="tel:++420 776 007 015" class="contacts__number">Hot Line</a>
+                <a href="tel:++420 776 007 015" class="contacts__number">Hot Line +420 776 007 015</a>
               </div>
             </div>
           </div>
 
           <div class="introduction__logo logo">
-            <picture class="logo__picture">
-              <img src="#" alt="Logo" class="logo__image">
-            </picture>
+              <img src="../img/svg/logo.svg" alt="Logo" class="logo__image" width="155" height="28">
           </div>
 
           <div class="introduction__quote quote">
             <p class="quote__text">„It’s a people business and we’re committed to our people“</p>
           </div>
+
+          <button class="menu-toggle"><a class="open-menu"></a></button>
         </div>
 
         <nav class="page-header__menu menu">
           <h2 class="visually-hidden">Main Navigation</h2>
           <div class="menu__wrapper">
-            <button class="menu__open-toggle"><span class="visually-hidden">Open Menu</span></button>
             <ul class="menu__list list">
               <li class="list__item">
-                <a href="#" class="list__link">o nás</a>
+                <a href="#" class="list__link">about us</a>
               </li>
               <li class="list__item">
-                <a href="#" class="list__link">etický kodex</a>
+                <a href="#" class="list__link">code of ethics</a>
               </li>
               <li class="list__item">
-                <a href="#" class="list__link">služby</a>
+                <a href="#" class="list__link">services</a>
                 <ul class="list__dropdown dropdown">
                   <li class="dropdown__item">
                     <a href="#" class="dropdown__link">retail</a>
                   </li>
                   <li class="dropdown__item">
-                    <a href="#" class="dropdown__link">bezpečnostní služby</a>
+                    <a href="#" class="dropdown__link">security services</a>
                   </li>
                   <li class="dropdown__item">
                     <a href="#" class="dropdown__link">facility management</a>
                   </li>
                   <li class="dropdown__item">
-                    <a href="#" class="dropdown__link">agentura práce</a>
+                    <a href="#" class="dropdown__link">job agency</a>
                   </li>
                 </ul>
               </li>
               <li class="list__item">
-                <a href="#" class="list__link">kariéra</a>
+                <a href="#" class="list__link">career</a>
               </li>
               <li class="list__item">
                 <a href="#" class="list__link">management</a>
               </li>
               <li class="list__item">
-                <a href="#" class="list__link">galerie</a>
+                <a href="#" class="list__link">gallery</a>
               </li>
               <li class="list__item">
-                <a href="#" class="list__link">podporujeme</a>
+                <a href="#" class="list__link">we support</a>
               </li>
               <li class="list__item">
-                <a href="#" class="list__link">kontakty</a>
+                <a href="#" class="list__link">contacts</a>
               </li>
             </ul>
           </div>
@@ -107,10 +108,10 @@
           <h2 class="visually-hidden">Main Content</h2>
 
           <div class="page-main__opening-text opening-text">
-            <div class="opening-text__heading">
+            <div class="opening-text__field opening-text__heading">
               <p class="opening-text__text">A New Standard</p>
             </div>
-            <div class="opening-text__description">
+            <div class="opening-text__field opening-text__description">
               <p class="opening-text__text">In Facility Management</p>
             </div>
           </div>
@@ -120,37 +121,31 @@
               <ul class="gallery__list">
                 <li class="gallery__item">
                   <a href="#" class="gallery__link">
-                    <img src="" alt="" class="gallery__image">
                     <p class="gallery__text">RETAIL</p>
                   </a>
                 </li>
                 <li class="gallery__item">
                   <a href="#" class="gallery__link">
-                    <img src="" alt="" class="gallery__image">
-                    <p class="gallery__text">BEZPEČNOSTNÍ SLUŽBY</p>
+                    <p class="gallery__text">SECURITY SERVICES</p>
                   </a>
                 </li>
                 <li class="gallery__item">
                   <a href="#" class="gallery__link">
-                    <img src="" alt="" class="gallery__image">
-                    <p class="gallery__text">FACILITY MANAGEMENT</p>
+                    <p class="gallery__text">FACILITIES MANAGEMENT</p>
                   </a>
                 </li>
                 <li class="gallery__item">
                   <a href="#" class="gallery__link">
-                    <img src="" alt="" class="gallery__image">
-                    <p class="gallery__text">AGENTURA PRÁCE</p>
+                    <p class="gallery__text">JOB AGENCY</p>
                   </a>
                 </li>
                 <li class="gallery__item">
                   <a href="#" class="gallery__link">
-                    <img src="" alt="" class="gallery__image">
                     <p class="gallery__text">HOSPITALITY</p>
                   </a>
                 </li>
                 <li class="gallery__item">
                   <a href="#" class="gallery__link">
-                    <img src="" alt="" class="gallery__image">
                     <p class="gallery__text">CONSTRUCTION</p>
                   </a>
                 </li>
@@ -164,9 +159,7 @@
 
       <footer class="page-footer">
 
-        <footer class="wrapper">
 
-        </footer>
 
       </footer>
 

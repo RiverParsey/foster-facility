@@ -1,0 +1,32 @@
+.menu__list {
+  @include reset_list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--index) * 2) 0;
+
+  @include widthDesktop_l {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid $color_bluish-gray;
+    padding: 10px
+  }
+}
+
+.dropdown {
+
+  @include widthDesktop_l {
+    display: none;
+  }
+}
+
+.list__item {
+  font-size: calc(var(--index) * 2);
+  color: $color_white;
+
+  @include widthDesktop_l {
+    font-size: calc(var(--index) * .2);
+    margin-right: calc(var(--index) * 1);
+  }
+}
