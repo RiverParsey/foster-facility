@@ -35,3 +35,67 @@
     font-size: calc(var(--index) * 2.5);
   }
 }
+
+.gallery {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.gallery__wrapper {
+  position: relative;
+}
+
+.gallery__list {
+  @include reset_list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include widthTablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include widthDesktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(3, 300px);
+    gap: 25px;
+    position: absolute;
+    top: calc(var(--index) * 10);
+    left: 45vw;
+  }
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(var(--index) * 30);
+  background: url(../../img/list-item_bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include widthTablet {
+    width: 50%;
+    min-height: calc(var(--index) * 35);
+  }
+
+  @include widthDesktop {
+    min-width: calc(var(--index) * 35);
+    min-height: calc(var(--index) * 20);
+  }
+}
+
+.gallery__text {
+  color: $color_white;
+  font-size: calc(var(--index) * 2.5);
+  opacity: 1;
+
+  @include widthDesktop {
+    font-size: calc(var(--index) / 1);
+  }
+}
