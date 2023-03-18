@@ -12,6 +12,8 @@
   }
 }
 
+  // introduction style
+
 .introduction {
   display: flex;
   align-items: center;
@@ -85,6 +87,8 @@
     display: none;
   }
 }
+
+  // menu-list style
 
 .menu__list {
   @include reset_list;

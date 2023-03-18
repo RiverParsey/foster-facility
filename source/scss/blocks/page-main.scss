@@ -6,6 +6,8 @@
   position: relative;
 }
 
+  // opening text style
+
 .opening-text {
   padding: 60px 0 90px 0;
   color: $color_white;
@@ -35,6 +37,8 @@
     font-size: calc(var(--index) * 2.5);
   }
 }
+
+  // gallery style
 
 .gallery {
   width: 100%;
