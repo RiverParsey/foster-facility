@@ -50,6 +50,12 @@
   }
 }
 
+@mixin widthDesktop_xl {
+  @media (min-width: $desktop_w_xl) {
+    @content;
+  }
+}
+
 // Font setter
 
 @mixin set_font ($f-size, $l-height, $f-weight) {   // Set font

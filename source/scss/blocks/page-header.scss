@@ -62,12 +62,17 @@
   height: calc(var(--index) * 5);
 
   @include widthTablet {
-    height: calc(var(--index) * 7);
+    height: calc(var(--index) * 5);
   }
 
   @include widthDesktop_l {
-    width: calc(var(--index) * 30);
-    height: calc(var(--inde) * 30);
+    width: calc(var(--index) * 25);
+    height: auto;
+  }
+
+  @include widthDesktop_xl {
+    width: calc(var(--index) * 25);
+    height: auto;
   }
 }
 
@@ -101,7 +106,6 @@
     width: 100%;
     flex-direction: row;
     justify-content: center;
-    border-top: 1px solid $color_bluish-gray;
     padding: 10px
   }
 }
@@ -117,8 +121,17 @@
   font-size: calc(var(--index) * 2);
   color: $color_white;
 
+  @include widthDesktop {
+    font-size: calc(var(--index) * .4);
+    margin-right: calc(var(--index) * .5);
+  }
+
   @include widthDesktop_l {
     font-size: calc(var(--index) * .2);
     margin-right: calc(var(--index) * 1);
+  }
+
+  @include widthDesktop_xl {
+    font-size: calc(var(--index) * .05)
   }
 }
