@@ -7,15 +7,328 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <script src="../js/index.js" defer></script>
+  <script src="../js/index.js" defer></script>
 
   <title>Foster Facility Example</title>
 
 </head>
 
 <body>
+
+  <div class="wrapper">
+    <div class="container">
+      <h1 class="visually-hidden">Foster Facility main-page</h1>
+
+      <header class="page-header">
+
+        <div class="page-header__introduction introduction">
+          <h2 class="visually-hidden">Header Introduction</h2>
+
+          <div class="introduction__switches-wrapper">
+            <div class="introduction__lang-switcher lang-switcher">
+              <div class="lang-switcher__field lang-switcher__english">
+                <img src="../img/polish-flag.png" alt="" width="21" height="16" class="lang-switcher__image">
+              </div>
+              <div class="lang-switcher__field lang-switcher__ukrainian">
+                <img src="../img/english-flag.png" alt="" width="21" height="16" class="lang-switcher__image">
+              </div>
+            </div>
+            <div class="introduction__contacts contacts">
+              <div class="contacts__mobile">
+                <a href="tel:++420 776 007 015" class="contacts__number">Hot Line +420 776 007 015</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="introduction__logo logo">
+            <a href="index.html" class="logo__link">
+              <img src="../img/svg/logo.svg" alt="Logo" class="logo__image" width="155" height="28">
+            </a>
+          </div>
+
+          <div class="introduction__quote quote">
+            <p class="quote__text">„It’s a people business and we’re committed to our people“</p>
+          </div>
+
+          <button class="menu-toggle"><a class="open-menu"></a></button>
+        </div>
+
+        <nav class="page-header__menu menu">
+          <h2 class="visually-hidden">Main Navigation</h2>
+          <div class="menu__wrapper">
+            <ul class="menu__list list">
+              <li class="list__item">
+                <a href="about_us.html" class="list__link">about us</a>
+              </li>
+              <li class="list__item">
+                <a href="code_of_ethics.html" class="list__link">code of ethics</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">services</a>
+                <ul class="list__dropdown dropdown">
+                  <li class="dropdown__item">
+                    <a href="retail.html" class="dropdown__link">retail</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="security.html" class="dropdown__link">security services</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="facility_management.html" class="dropdown__link">facility management</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="job_agency.html" class="dropdown__link">job agency</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <a href="career.html" class="list__link">career</a>
+              </li>
+              <li class="list__item">
+                <a href="management.html" class="list__link">management</a>
+              </li>
+              <li class="list__item">
+                <a href="gallery.html" class="list__link">gallery</a>
+              </li>
+              <li class="list__item">
+                <a href="support.html" class="list__link">we support</a>
+              </li>
+              <li class="list__item">
+                <a href="contacts.html" class="list__link">contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+      </header>
+
+      <main class="page-main">
+
+        <div class="page-main__wrapper">
+          <h2 class="visually-hidden">Main Content</h2>
+
+          <div class="page-main__opening-text opening-text code_of_ethics__opening-text">
+            <div class="opening-text__field opening-text__heading">
+              <p class="opening-text__text">Code of ethics</p>
+            </div>
+            <!-- <div class="opening-text__field opening-text__description">
+              <p class="opening-text__text">In Facility Management</p>
+            </div> -->
+          </div>
+
+          <div class="code_of_ethics__description">
+            <div class="code_of_ethics__description-wrapper">
+              <p class="code_of_ethics__text">
+                Code of Ethics of Foster Facility s.r.o. it contains important rules of conduct to help us answer
+                correctly and appropriately the ethical and legal questions we encounter in strategic considerations and
+                decision-making processes.
+              </p>
+            </div>
+            <div class="code_of_ethics__List-wrapper">
+              <ul class="code_of_ethics__list">
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    1.COMPLIANCE
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        Adherence to applicable legal and other regulations (compliance) is the basis of our
+                        decision-making and actions in doing business and is firmly embedded in our corporate culture.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    2.PROHIBITION OF CORRUPTION
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        FOSTER FACILITY is against corruption and bribery. Business practices that use unfair means are
+                        not tolerated. Employees of the FOSTER FACILITY may not offer their business partners any
+                        benefits that lead to a violation of objective and fair business decision-making or could even
+                        create such an impression, nor may they receive or accept such benefits from them.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    3.PREVENTION OF CONFLICT OF INTEREST
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        At FOSTER FACILITY, business decisions are made exclusively in the best interest of the company.
+                        Potential conflicts of interest with private affairs or other economic or any other activities,
+                        including those involving close persons or organizations, must be nipped in the bud. If it
+                        nevertheless occurs, such a case must be dealt with in accordance with legal regulations and
+                        applicable internal guidelines. A condition for such a procedure is transparent informing of the
+                        superior about the conflict of interests.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    4.MONEY LAUNDERING
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        No employee may, either alone or jointly with others, engage in conduct that violates domestic
+                        or foreign anti-money laundering regulations. In case of doubt regarding the admissibility of
+                        transactions involving the transfer of cash, the relevant finance department should be contacted
+                        as soon as possible.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    5.DONATIONS AND OTHER PROPERTY BENEFITS
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        Employees of the FOSTER FACILITY may not request, accept, offer or provide - whether directly or
+                        indirectly - unauthorized property benefits in the form of monetary payments, gifts or any other
+                        contributions or performance during their work activities. This applies in relation to
+                        individuals, businesses as well as official bodies or other institutions. In particular, no
+                        benefits of any kind may be offered or provided to official representatives of domestic or
+                        foreign institutions. The only exceptions are ordinary occasional or promotional gifts,
+                        entertainment or other occasional pleasures that are demonstrably of little value.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    6.INSIDER INFORMATION
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        Employees may not use the information obtained in the course of their work for their own
+                        purposes or in the interest of third parties.
+
+                        If employees receive information about the internal affairs of customers or the FOSTER FACILITY
+                        company that may affect the stock exchange listing, they must treat this information as
+                        confidential and must not pass it on to third parties. The use of this information for your own
+                        or third parties' purposes is strictly prohibited.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    7.CONFIDENTIALITY AND DATA PROTECTION
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        Much of FOSTER FACILITY's business information is confidential or proprietary and therefore
+                        subject to confidentiality. This does not apply if disclosure of such information has been
+                        approved by FOSTER FACILITY or disclosure is required by law or regulation.
+
+                        The obligation of confidentiality applies in particular to intellectual property. This includes
+                        trade secrets, patents, trademarks and copyrights, but also business and marketing plans,
+                        proposals, business documents, salary details and any other undisclosed financial data and
+                        reports.
+
+                        All personal information about employees, customers, business partners and suppliers, as well as
+                        about other third parties, is used by FOSTER FACILITY with due care, maintaining the principle
+                        of confidentiality and strict compliance with data protection legislation. Maximum care must be
+                        taken to protect this information.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    8.PERSONAL CONDUCT
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        FOSTER FACILITY and its employees act correctly and with respect in dealings with customers,
+                        suppliers, co-workers and other persons. There is no violation of human dignity and privacy. All
+                        employees are obliged to act openly, fairly and with respect in their interactions with each
+                        other and strive to find a common solution to the problems that have arisen.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    9.PROHIBITION OF DISCRIMINATION
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        Diskriminace na základě pohlaví nebo sexuální orientace, věku, vyznání nebo smýšlení, rasové
+                        nebo etnické příslušnosti, národnostního nebo sociálního původu nebo postižení pracovníků je
+                        zakázána. V mezinárodním styku je nutno respektovat zvyklosti jiných národů. Zaměstnanci i
+                        vedoucí pracovníci jsou povinni aktivně vystupovat proti diskriminaci.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    10.IMPLEMENTATION AND CONTROL OF COMPLIANCE
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        The rules contained in this code of ethics are among the pillars of FOSTER FACILITY's corporate
+                        culture. Uniform adherence to these principles is imperative. Every employee is responsible for
+                        them.
+
+                        If any employee has questions or comments about the points mentioned in this code of ethics, or
+                        is aware of a possible violation of the rules of conduct contained in it, he should immediately
+                        contact his supervisor with such a matter. It may also do so anonymously or on the basis of
+                        confidentiality.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="code_of_ethics__item">
+                  <p class="code_of_ethics__text">
+                    11.LIABILITY
+                  </p>
+                  <ul class="code_of_ethics__submenu submenu">
+                    <li class="code_of_ethics__item">
+                      <p class="code_of_ethics__text">
+                        All employees and management members of FOSTER FACILITY are bound by the rules of this code of
+                        ethics. The Code of Ethics contains the values, principles and rules of conduct on which FOSTER
+                        FACILITY is based in its business activities. The goal of the company's management is to comply
+                        with ethical standards and create a work environment that supports integrity, respect and fair
+                        behavior.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+      <footer class="page-footer">
+
+
+
+      </footer>
+
+    </div>
+  </div>
 
 </body>
 

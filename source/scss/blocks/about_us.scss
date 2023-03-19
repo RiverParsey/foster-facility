@@ -1,0 +1,10 @@
+.about_us__opening-text {
+
+  @include widthDesktop {
+    top: calc(var(--index) * 70);
+  }
+}
+
+.about_us__description {
+  color: white;
+}

@@ -3,6 +3,7 @@
 }
 
 .page-main__wrapper {
+  min-height: 100vh;
   position: relative;
 }
 
@@ -34,7 +35,11 @@
   }
 
   @include widthDesktop {
-    font-size: calc(var(--index) * 2.5);
+    font-size: calc(var(--index) * 2);
+  }
+
+  @include widthDesktop_xl {
+    font-size: calc(var(--index) * 3);
   }
 }
 
@@ -68,7 +73,11 @@
     gap: 25px;
     position: absolute;
     top: calc(var(--index) * 10);
-    left: 45vw;
+    left: 43vw;
+  }
+
+  @include widthDesktop_xl {
+    left: 50vw;
   }
 }
 
@@ -79,9 +88,39 @@
   justify-content: center;
   width: 100%;
   min-height: calc(var(--index) * 30);
-  background: url(../../img/list-item_bg.jpg) no-repeat;
+  background: url(../../img/retail-background.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+
+  &:nth-child(2){
+    background: url(../../img/security_img.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &:nth-child(3){
+    background: url(../../img/IMG_5294.WEBP);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &:nth-child(4){
+    background: url(../../img/list-item_bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &:nth-child(5){
+    background: url(../../img/IMG_5296.JPG);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &:nth-child(6){
+    background: url(../../img/construction_img.jpg);
+    background-position: center;
+    background-size: cover;
+  }
 
   @include widthTablet {
     width: 50%;
@@ -89,8 +128,18 @@
   }
 
   @include widthDesktop {
-    min-width: calc(var(--index) * 35);
+    min-width: calc(var(--index) * 30);
+    min-height: calc(var(--index) * 15);
+  }
+
+  @include widthDesktop_l {
+    min-width: calc(var(--index) * 40);
     min-height: calc(var(--index) * 20);
+  }
+
+  @include widthDesktop_xl {
+    min-width: calc(var(--index) * 40);
+    min-height: calc(var(--index) * 19);
   }
 }
 
@@ -100,6 +149,6 @@
   opacity: 1;
 
   @include widthDesktop {
-    font-size: calc(var(--index) / 1);
+    font-size: calc(var(--index) / 2);
   }
 }
